@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
           .filter(fileName => /\.(jpe?g|png|gif)$/i.test(fileName));
         for (let i = 0; i < fileNames.length; i++) 
         {
-          print(fileNames[i])
+          console.log(fileNames[i]);
           const img = document.createElement('img');
           img.src = `${artworkDir}/${fileNames[i]}`;
           gallery.appendChild(img);
