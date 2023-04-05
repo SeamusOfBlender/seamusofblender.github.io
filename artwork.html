@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Artwork Gallery</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="gallery.js"></script>
-</head>
-<body>
-	<header>
-		<h1>Artwork Gallery</h1>
-	</header>
-	<main>
-		<h2>Featured Artworks</h2>
-		<div class="gallery"></div>
-	</main>
-	<footer>
-		<p>&copy; 2023 Your Name</p>
-	</footer>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="gallery">
+        <!-- Gallery images will be dynamically generated here -->
+    </div>
+
+    <!-- Modal for displaying full-size images -->
+    <div class="modal-overlay">
+      <div class="modal-content">
+        <button class="modal-prev">Previous</button>
+        <button class="modal-next">Next</button>
+        <button class="modal-close">Close</button>
+        <img class="modal-image" src="">
+      </div>
+    </div>
+
+    <script src="gallery.js"></script>
+  </body>
 </html>
