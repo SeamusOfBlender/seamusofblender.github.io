@@ -8,8 +8,10 @@ const modalClose = document.querySelector('.modal-close');
 let currentImageIndex;
 let images;
 
+
+
 // Fetch images from server artwork folder, and create gallery
-fetch('artwork/')
+fetch('./artwork/')
   .then(response => response.text())
   .then(html => {
 
